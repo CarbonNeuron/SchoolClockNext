@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer utilities {
+    .controlBox{
+        position: fixed;
+        border-radius: 50%;
+        border: none;
+        right: 32px;
+        bottom: 5vh;
+        left: unset;
+    }
     .overlay {
         position: absolute;
         left: 0;

@@ -10,13 +10,20 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "@types/howler": "^2.2.1",
+    "@types/luxon": "^1.26.2",
+    "@types/react-helmet": "^6.1.0",
     "autoprefixer": "^9",
+    "howler": "^2.2.1",
+    "luxon": "^1.26.0",
     "next": "10.0.8",
     "next-themes": "^0.0.12",
     "postcss": "^7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-helmet": "^6.1.0",
     "react-particles-js": "^3.4.1",
+    "react-switch": "^6.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
