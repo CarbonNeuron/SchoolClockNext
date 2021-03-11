@@ -6,9 +6,10 @@ import Switch from "react-switch";
 import SvgVolumeOffSolid from "../icons/VolumeOffSolid";
 import SvgVolumeUpSolid from "../icons/VolumeUpSolid";
 
-export default function SchoolClock({PeriodTimes, PeriodNames, timeZone}:{
+export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, timeZone}:{
   PeriodTimes:number[],
   PeriodNames:string[],
+  PeriodHeadings:string[],
   timeZone:string
 }) {
   const updateTimer = useRef(setTimeout(()=>{return null},0));
@@ -88,15 +89,15 @@ export default function SchoolClock({PeriodTimes, PeriodNames, timeZone}:{
     LastPeriod = `${Period}`; //Set last period
     if (Period.startsWith("Break")) {
       setCountdownText(`Ends in: ${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
-      setHeaderText(`${mins}:${zeroPad(secs, 2)}`);
+      setHeaderText(`${PeriodHeadings[periodIndex]} | ${mins}:${zeroPad(secs, 2)}`);
     }
     else if (Period == "After School" || Period == "Weekend") {
       setCountdownText(`School starts in: ${zeroPad(actualHours,2)}:${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
-      setHeaderText(`${actualHours}:${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
+      setHeaderText(`After School | ${actualHours}:${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
     }
     else {
       setCountdownText(`Ends in: ${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
-      setHeaderText(`${mins}:${zeroPad(secs, 2)}`);
+      setHeaderText(`${PeriodHeadings[periodIndex]} | ${mins}:${zeroPad(secs, 2)}`);
     }
     setPeriodText(Period);
 

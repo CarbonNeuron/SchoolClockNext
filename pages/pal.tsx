@@ -42,6 +42,25 @@ const ClassNames = [
   "Break 8",
   "9th period"
 ];
+const PeriodHeadings = [
+  "1st",
+  "Break",
+  "2nd",
+  "Break",
+  "3rd",
+  "Break",
+  "4th",
+  "Break",
+  "5th",
+  "Break",
+  "6th",
+  "Break",
+  "7th",
+  "Break",
+  "8th",
+  "Break",
+  "9th"
+];
 
 export default function pal() {
   return (
@@ -95,7 +114,7 @@ export default function pal() {
           },
           "retina_detect": true
         }} className="bg-gray-900 h-screen w-screen"/>
-      <SchoolClock PeriodTimes={ClassSchedule} PeriodNames={ClassNames} timeZone={"America/Chicago"}/>
+      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"}/>
 
     </div>
   );

@@ -34,6 +34,21 @@ const ClassNames = [
   "9th period",
   "Dismissal",
 ];
+const PeriodHeadings = [
+  "Announce",
+  "1st",
+  "Break",
+  "2nd",
+  "Break",
+  "3rd/4th",
+  "Break",
+  "6th/7th",
+  "Break",
+  "8th",
+  "Break ",
+  "9th",
+  "Dismiss",
+];
 
 export default function ms() {
   return (
@@ -87,7 +102,7 @@ export default function ms() {
           },
           "retina_detect": true
         }} className="bg-gray-900 h-screen w-screen"/>
-      <SchoolClock PeriodTimes={ClassSchedule} PeriodNames={ClassNames} timeZone={"America/Chicago"}/>
+      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"}/>
 
     </div>
   );
