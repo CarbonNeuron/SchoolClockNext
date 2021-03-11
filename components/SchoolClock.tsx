@@ -122,9 +122,9 @@ export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, t
         <title>{HeaderText}</title>
       </Helmet>
       <div className="flex h-screen overlay" style={{pointerEvents:"none"}}>
-        <div className="m-auto w-screen">
+        <div className="m-auto">
           <h1 className="text-white text-8xl text-center" style={{pointerEvents:"auto"}}>{PeriodText}</h1>
-          <hr className="border-gray-800 border mt-4 mb-4 max-w-3xl align-middle m-auto"/>
+          <hr className="border-gray-800 border mt-4 mb-4 w-5/6 sm:w-full align-middle m-auto"/>
           <h1 className="text-white text-7xl text-center" style={{pointerEvents:"auto"}}>{CountdownText}</h1>
         </div>
       </div>
