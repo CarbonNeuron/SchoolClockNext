@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="h-screen bg-gray-900">
       <Head>
-        <title>Create Next App</title>
+        <title>School Clock</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar activePage={"hs"}/>
