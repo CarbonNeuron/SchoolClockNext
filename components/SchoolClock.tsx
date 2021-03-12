@@ -1,7 +1,7 @@
 import {useEffect, useRef, useState} from "react";
 import { DateTime } from 'luxon';
 import {Howl} from 'howler';
-import { Helmet } from 'react-helmet'
+import Head from 'next/head'
 import Switch from "react-switch";
 import SvgVolumeOffSolid from "../icons/VolumeOffSolid";
 import SvgVolumeUpSolid from "../icons/VolumeUpSolid";
@@ -118,9 +118,9 @@ export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, t
   }, []);
   return (
     <div>
-      <Helmet>
+      <Head>
         <title>{HeaderText}</title>
-      </Helmet>
+      </Head>
       <div className="flex h-screen overlay" style={{pointerEvents:"none"}}>
         <div className="m-auto">
           <h1 className="text-white text-8xl text-center" style={{pointerEvents:"auto"}}>{PeriodText}</h1>
