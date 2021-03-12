@@ -118,20 +118,20 @@ const LateStartNames = [
     "8th period"
 ]
 
-let ClassSchedule, PeriodHeadings, PeriodNames;
+let ClassSchedule: number[], PeriodHeadings: string[], ClassNames: string[];
 
 if ([1,4].includes(new Date().getDay())) { // monday
   ClassSchedule = BlueDaySchedule
   PeriodHeadings = BlueDayNames
-  PeriodNames = BlueDayNames
+  ClassNames = BlueDayNames
 } else if ([2,5].includes(new Date().getDay())) {
   ClassSchedule = GoldDaySchedule
   PeriodHeadings = GoldDayNames
-  PeriodNames = GoldDayNames
+  ClassNames = GoldDayNames
 } else if (new Date().getDay() === 3) {
   ClassSchedule = LateStartSchedule
   PeriodHeadings = LateStartNames
-  PeriodNames = LateStartNames
+  ClassNames = LateStartNames
 }
 
 export default function wths() {
