@@ -39,6 +39,9 @@ export default function Navbar({ activePage="" }: {
               <Link href="/pal" passHref>
                 <a className={activePage.toLowerCase() == 'pal'?"bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-bold":"text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>Palmyra high school</a>
               </Link>
+              <Link href="/wths" passHref>
+                <a className={activePage.toLowerCase() == 'wths'?"bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-bold":"text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>WTHS</a>
+              </Link>
             </div>
           </div>
         </div>
@@ -54,6 +57,9 @@ export default function Navbar({ activePage="" }: {
           </Link>
           <Link href="/pal" passHref>
             <a className={activePage.toLowerCase() == 'pal'?"bg-gray-900 block text-white px-3 py-2 rounded-md text-sm font-bold":"text-gray-300 block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>Palmyra high school</a>
+          </Link>
+          <Link href="/wths" passHref>
+            <a className={activePage.toLowerCase() == 'wths'?"bg-gray-900 block text-white px-3 py-2 rounded-md text-sm font-bold":"text-gray-300 block hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"}>WTHS</a>
           </Link>
         </div>
       </div>
