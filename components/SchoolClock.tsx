@@ -96,8 +96,14 @@ export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, t
       setHeaderText(`After School | ${actualHours}:${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
     }
     else {
-      setCountdownText(`Ends in: ${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
-      setHeaderText(`${PeriodHeadings[periodIndex]} | ${mins}:${zeroPad(secs, 2)}`);
+      if(actualHours == 0){
+        setCountdownText(`Ends in: ${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
+        setHeaderText(`${PeriodHeadings[periodIndex]} | ${mins}:${zeroPad(secs, 2)}`);
+      }
+      else{
+        setCountdownText(`Ends in: ${zeroPad(actualHours,2)}:${zeroPad(mins,2)}:${zeroPad(secs, 2)}`);
+        setHeaderText(`${PeriodHeadings[periodIndex]} | ${zeroPad(actualHours,2)}:${mins}:${zeroPad(secs, 2)}`);
+      }
     }
     setPeriodText(Period);
 
