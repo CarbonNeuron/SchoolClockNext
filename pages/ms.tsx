@@ -65,7 +65,7 @@ export default function ms() {
               "value": 60,
               "density": {
                 "enable": true,
-                "value_area": 1500
+                "value_area": 1000
               }
             },
             "line_linked": {
