@@ -114,7 +114,7 @@ export default function pal() {
           },
           "retina_detect": true
         }} className="bg-gray-900 h-screen w-screen"/>
-      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/New_York"}/>
+      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/New_York"} soundPath="tone2.ulaw.wav"/>
 
     </div>
   );

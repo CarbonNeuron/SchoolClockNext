@@ -186,7 +186,7 @@ export default function wths() {
           },
           "retina_detect": true
         }} className="bg-gray-900 h-screen w-screen"/>
-      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"}/>
+      <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"} soundPath="popcat.wav"/>
 
     </div>
   );
