@@ -6,11 +6,12 @@ import Switch from "react-switch";
 import SvgVolumeOffSolid from "../icons/VolumeOffSolid";
 import SvgVolumeUpSolid from "../icons/VolumeUpSolid";
 
-export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, timeZone}:{
+export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, timeZone, soundPath}:{
   PeriodTimes:number[],
   PeriodNames:string[],
   PeriodHeadings:string[],
-  timeZone:string
+  timeZone:string,
+  soundPath:string,
 }) {
   const updateTimer = useRef(setTimeout(()=>{return null},0));
   const [StopToken, setStopToken] = useState(false);
@@ -25,7 +26,7 @@ export default function SchoolClock({PeriodTimes, PeriodNames, PeriodHeadings, t
     localStorage.setItem('mute', checked?"true":"false");
   }
 
-  const sound = new Howl({src:["tone2.ulaw.wav"], volume: 0.25});
+  const sound = new Howl({src:[soundPath], volume: 0.25});
 
   function Update(){
     const local = DateTime.local().setZone(timeZone);
