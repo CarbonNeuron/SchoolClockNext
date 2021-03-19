@@ -110,7 +110,7 @@ export default function Home() {
             },
             "retina_detect": true
           }} className="bg-gray-900 h-screen w-screen"/>
-        <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"} soundPath="popcat.wav"/>
+        <SchoolClock PeriodTimes={ClassSchedule} PeriodHeadings={PeriodHeadings} PeriodNames={ClassNames} timeZone={"America/Chicago"} soundPath="tone2.ulaw.wav"/>
 
     </div>
   );
