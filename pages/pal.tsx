@@ -4,24 +4,24 @@ import SchoolClock, {toSeconds} from "../components/SchoolClock";
 import Particles from "react-particles-js";
 
 const ClassSchedule = [
-  toSeconds(8, 0),
-  toSeconds(8, 26),
-  toSeconds(8, 29),
-  toSeconds(8, 55),
-  toSeconds(8, 58),
-  toSeconds(9, 24),
-  toSeconds(9, 27),
-  toSeconds(9, 53),
-  toSeconds(9, 56),
-  toSeconds(10, 22),
-  toSeconds(10, 25),
-  toSeconds(10, 51),
-  toSeconds(10, 54),
-  toSeconds(11, 20),
-  toSeconds(11, 23),
-  toSeconds(11, 49),
-  toSeconds(11, 52),
-  toSeconds(12, 19)
+  toSeconds(7, 50),
+  toSeconds(8, 35),
+  toSeconds(8, 38),
+  toSeconds(9, 18),
+  toSeconds(9, 21),
+  toSeconds(10, 1),
+  toSeconds(10, 4),
+  toSeconds(10, 44),
+  toSeconds(10, 47),
+  toSeconds(11, 27),
+  toSeconds(11, 30),
+  toSeconds(12, 10),
+  toSeconds(12, 13),
+  toSeconds(12, 53),
+  toSeconds(12, 56),
+  toSeconds(1, 36),
+  toSeconds(1, 39),
+  toSeconds(2, 19)
 ];
 const ClassNames = [
   "1st period",
