@@ -19,9 +19,9 @@ const ClassSchedule = [
   toSeconds(12, 13),
   toSeconds(12, 53),
   toSeconds(12, 56),
-  toSeconds(1, 36),
-  toSeconds(1, 39),
-  toSeconds(2, 19)
+  toSeconds(13, 36),
+  toSeconds(13, 39),
+  toSeconds(14, 19)
 ];
 const ClassNames = [
   "1st period",
